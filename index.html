@@ -4,47 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Daily Quote</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .container {
-      text-align: center;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-      max-width: 400px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1.2rem;
-      color: #333;
-      margin-bottom: 2rem;
-    }
-    button {
-      padding: 0.6rem 1.2rem;
-      font-size: 1rem;
-      border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
@@ -52,23 +12,7 @@
     <p>"The only limit to our realization of tomorrow is our doubts of today."</p>
     <button>New Quote</button>
   </div>
-<script>
-  const quotes = [
-    "The best way to predict the future is to invent it.",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts.",
-    "Do what you can, with what you have, where you are.",
-    "It does not matter how slowly you go as long as you do not stop.",
-    "Believe you can and you're halfway there."
-  ];
 
-  const quoteText = document.querySelector("p");
-  const button = document.querySelector("button");
-
-  button.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * quotes.length);
-    quoteText.textContent = `"${quotes[randomIndex]}"`;
-  });
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
